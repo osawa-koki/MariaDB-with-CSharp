@@ -38,7 +38,7 @@ switch (command)
 {
   case "select":
     {
-      string sql = "SELECT * FROM users";
+      string sql = "SELECT id, name FROM users";
       MySqlCommand cmd = new(sql, conn);
       MySqlDataReader reader = cmd.ExecuteReader();
       while (reader.Read())
