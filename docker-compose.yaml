@@ -11,7 +11,13 @@ services:
       MYSQL_PASSWORD: p@ssword1234
       TZ: Asia/Tokyo
     ports:
-        - 3306:3306
+      - 3306:3306
     volumes:
-        - ./db:/var/lib/mysql
-        - ./init.sql:/docker-entrypoint-initdb.d
+      - ./db:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d
+  app:
+    build: ./src
+    container_name: my_app
+    command: "dotnet Program.dll ${ARG}"
+    depends_on:
+      - db
