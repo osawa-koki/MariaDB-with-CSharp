@@ -1,6 +1,6 @@
 # MariaDB-with-CSharp
 
-MariaDBをC#で操作するためのサンプルプログラム。  
+🦉🦉🦉 MariaDBをC#で操作するためのサンプルプログラム。  
 
 ![成果物](./docs/img/fruit.gif)  
 
