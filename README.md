@@ -4,6 +4,9 @@
 
 ![成果物](./docs/img/fruit.gif)  
 
+> **Warning**  
+> MySQLドライバ(MySql.Data)はGPLライセンスで配布されています。  
+
 ## 実行方法
 
 最初にデータベースを作成します。  
