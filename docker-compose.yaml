@@ -19,3 +19,4 @@ services:
     build: ./src
     container_name: my_app
     command: "dotnet Program.dll ${ARG}"
+    depends_on: db
