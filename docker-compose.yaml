@@ -15,3 +15,7 @@ services:
     volumes:
         - ./db:/var/lib/mysql
         - ./init.sql:/docker-entrypoint-initdb.d
+  app:
+    build: ./src
+    container_name: my_app
+    command: "dotnet Program.dll ${ARG}"
